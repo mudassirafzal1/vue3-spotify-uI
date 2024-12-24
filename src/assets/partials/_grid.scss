@@ -1,0 +1,65 @@
+$grid-columns: 12;
+@for $i from 1 through $grid-columns {
+    .grid-#{$i} {
+        max-width: percentage($i / $grid-columns);
+        flex: percentage($i / $grid-columns);
+    }
+}
+
+$offset-columns: 12;
+@for $i from 1 through $offset-columns {
+    .offset-#{$i} {
+        margin-left: percentage($i / $offset-columns);
+    }
+}
+
+// styles
+[class^='grid-'] {
+    position: relative;
+    // width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (max-width: 1200px) {
+    [class^='grid-'] {
+        margin: 0 !important;
+    }
+}
+
+@media (max-width:768px) {
+    .grid-row {
+        display: block;
+    }
+    [class^='grid-'] {
+        max-width: 100%;
+        flex: inherit;
+    }
+    .grid-row {
+        >div {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (max-width: #{$breakpoint-1024}) {
+        padding: 0;
+    }
+}

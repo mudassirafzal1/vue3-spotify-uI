@@ -1,0 +1,122 @@
+/* Reset -------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a,
+abbr,
+acronym,
+address,
+article,
+aside,
+blockquote,
+body,
+caption,
+code,
+dd,
+del,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+iframe,
+img,
+input,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+pre,
+q,
+section,
+span,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+}
+
+blockquote,
+q {
+    quotes: """";
+}
+
+a img {
+    border: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: none;
+}
+
+
+/* Global -------------------------------------------------- */
+
+body {
+    font-family: var(--theme-font);
+    color: var(--color-white);
+    font-size: rems(14px);
+    font-weight: 400;
+    line-height: 20px;
+    background: var(--color-black);
+  
+}
+ul,
+ul li,
+ul li ul,
+ul li ul li,
+ul ol {
+    list-style: none;
+}

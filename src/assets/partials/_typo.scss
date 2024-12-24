@@ -1,0 +1,15 @@
+.section-heading {
+    font-size: rems(24px);
+    font-weight: 700;
+    font-family: var(--theme-font-title);
+    color: var(--color-white);
+    line-height: 29px;
+    margin-bottom: 8px;
+    a{
+        color: var(--color-white);
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

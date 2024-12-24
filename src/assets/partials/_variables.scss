@@ -1,0 +1,17 @@
+$baseFontSize: 16px;
+$breakpoint-1440: 1440px;    
+$breakpoint-1200: 1200px;    
+$breakpoint-1024: 1024px;    
+$breakpoint-992: 992px;    
+$breakpoint-768: 768px;
+$breakpoint-480: 480px;
+:root {
+    --base-fontsize: 16px;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-black-secondary: #121212;
+    --theme-font: 'circularSP';
+    --theme-font-title: 'circularSPTitle';
+    --black-highlight: #1f1f1f;
+    --text-subtitle: #b3b3b3;   
+}
